@@ -1,12 +1,10 @@
+/* mobile first style */
 html, body{
     scroll-behavior: smooth;
     height: 100%;
     position: relative;
+    font-family: 'Karla', sans-serif;
 }
-
-/* body {
-    margin: auto 3em;
-} */
 
 .content {
     width: 80%;
@@ -14,18 +12,39 @@ html, body{
 
 /* footer */
 .footer {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    padding: 5em auto;
-    width: 100%;
     background-color:#333333;
     color: white;
     text-align: center;
+    margin: 3em auto;
 }
 
 .footer > p {
-    margin: 1.3rem;
+    padding: 1.3em;
 }
 
 /* media query goes below here */
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .content {
+        width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .content {
+        width: 65%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
