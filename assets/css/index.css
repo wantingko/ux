@@ -10,6 +10,21 @@ html, body{
     width: 80%;
 }
 
+/* project */
+.flex-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-reverse{
+    flex-direction: row-reverse;
+  }
+  
+  .flex-2 > div {
+    padding: 10px 10px 10px 0;
+  }
+
 /* footer */
 .footer {
     background-color:#333333;

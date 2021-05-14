@@ -13,15 +13,33 @@
   .landing-text > p {
     text-align: center;
   }
-  /* .landing-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-  } */
 
+  /* project color */
   #mitigate {
     background-color: rgba(43, 47, 51, 0.05);
   }
+
+  #sheepy {
+    background-color: rgba(240, 201, 41, 0.25);
+  }
+
+  /* project demo */
+  .demo {
+    gap: 1rem;
+    padding-bottom: 5em;
+    align-items: center;
+  }
+  .gif {
+    display: flex;
+    justify-content: center;
+  }
+  /* .flex-2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+  } */
 
 /* media query goes below here */
 /* Extra small devices (phones, 600px and down) */
@@ -35,9 +53,10 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .landing-grid {
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
+        grid-gap: 20px; */
+        flex-direction: row;
       }
       .landing-text {
         position: relative;
@@ -49,9 +68,14 @@
       .landing-text > p {
         text-align: left;
       }
-      /* .landing-title {
-        font-size: 50px;
-        text-align: left;
+      /* .flex-2 {
+          flex-direction: row;
+      } */
+      .demo-reverse {
+          flex-direction: row-reverse;
+      }
+      /* .demo {
+        gap: 1rem;
       } */
 }
 
