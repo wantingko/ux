@@ -33,13 +33,27 @@
     display: flex;
     justify-content: center;
   }
-  /* .flex-2 {
+
+  /* research finding */
+  .proj-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+  .proj-card {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.125);
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 50px;
-  } */
+    min-width: 160px;
+    border-radius: .25rem;
+    padding: 1.25rem;
+    }
 
 /* media query goes below here */
 /* Extra small devices (phones, 600px and down) */
@@ -77,6 +91,12 @@
       /* .demo {
         gap: 1rem;
       } */
+      .proj-container {
+        flex-wrap: nowrap;
+    }
+      .proj-card {
+        margin-right: 1rem;
+        }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
