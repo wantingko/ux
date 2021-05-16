@@ -6,7 +6,9 @@ html, body{
     font-family: 'Karla', sans-serif;
     /* font-family: 'Rubik', sans-serif; */
 }
-
+a:hover {
+    text-decoration: none;
+}
 .content {
     width: 80%;
 }
@@ -53,6 +55,9 @@ li .nav-link.active {
     font-size: 1.5rem;
     font-weight: 700;
     color: #f48b29;
+}
+.nav-logo:hover {
+    color: #334443;
 }
 
 /* project */
