@@ -2,10 +2,9 @@
 .landing-grid {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
-    padding: 0 5%;	
+    padding: 10% 5% 0 5%;	
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
   }
   .landing-text > h3 {
     text-align: center;
@@ -97,6 +96,7 @@
 @media only screen and (min-width: 768px) {
     .landing-grid {
         flex-direction: row;
+        padding: 0 5%;
       }
       .landing-text {
         position: relative;
