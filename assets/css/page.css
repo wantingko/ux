@@ -13,12 +13,41 @@
   .landing-text > p {
     text-align: center;
   }
+  .section-tag {
+    text-transform: uppercase;
+    color: #a7bbc7;
+  }
+
+  /* back to top */
+  #top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 25px; /* Place the button at the bottom of the page */
+    right: 25px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ffe227; /* Set a background color */
+    color: #334443; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+
+    font-size: 18px; /* Increase font size */
+    
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 35px;
+  }
+  
+  #top:hover {
+    color: white;
+    background-color: #f48b29; /* Add a dark-grey background on hover */
+  }
 
   /* project color */
   #mitigate {
     background-color: rgba(43, 47, 51, 0.05);
   }
-
   #sheepy {
     background-color: rgba(240, 201, 41, 0.25);
   }
@@ -39,7 +68,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-}
+  }
   .proj-card {
     width: 100%;
     border: 1px solid rgba(0,0,0,.125);
@@ -53,7 +82,7 @@
     min-width: 160px;
     border-radius: .25rem;
     padding: 1.25rem;
-    }
+  }
 
 /* media query goes below here */
 /* Extra small devices (phones, 600px and down) */
@@ -67,9 +96,6 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .landing-grid {
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px; */
         flex-direction: row;
       }
       .landing-text {
@@ -82,15 +108,9 @@
       .landing-text > p {
         text-align: left;
       }
-      /* .flex-2 {
-          flex-direction: row;
-      } */
       .demo-reverse {
           flex-direction: row-reverse;
       }
-      /* .demo {
-        gap: 1rem;
-      } */
       .proj-container {
         flex-wrap: nowrap;
     }
