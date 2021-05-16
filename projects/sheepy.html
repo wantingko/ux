@@ -13,19 +13,45 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
   <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+  
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"> -->
 
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../assets/js/index.js"></script>
+  <!-- <script type="text/javascript" src="../assets/js/index.js"></script>s -->
 </head>
 
 <body>
-    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a> -->
-    <!-- btn-circle btn-xl -->
-    <!-- <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i> -->
+    <!-- header and navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Wan-Ting Ko</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Resume</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li> -->
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- back to top -->
     <button onclick="topFunction()" id="top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     <!-- project starts here -->
     <div class="landing-grid" id="sheepy">
@@ -234,6 +260,27 @@
 
     <!-- script -->
     <script>
+        // navbar
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+        // back to top
         //Get the button
         var mybutton = document.getElementById("top");
         
