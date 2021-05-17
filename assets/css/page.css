@@ -19,6 +19,14 @@
   .content > img {
     display: block;
     margin: auto;
+    /* border-radius: 6px; */
+  }
+  .caption {
+    text-align: center;
+    color: #a7bbc7;
+    padding: 3px;
+    margin: 5px 0 30px 0;
+    line-height: 1.5;
   }
 
   /* back to top */
