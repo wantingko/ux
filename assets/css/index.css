@@ -1,0 +1,138 @@
+/* mobile first style */
+html, body{
+    scroll-behavior: smooth;
+    height: 100%;
+    position: relative;
+    font-family: 'Karla', sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
+}
+a:hover {
+    text-decoration: none;
+}
+.content {
+    width: 80%;
+}
+
+.separator {
+    margin: 5em auto;
+}
+
+/* header and navbar */
+.header{
+  -webkit-box-shadow: 0 4px 6px -6px rgba(51, 68, 67, 0.7);
+  -moz-box-shadow: 0 4px 6px -6px rgba(51, 68, 67, 0.7);
+  box-shadow: 0 4px 6px -6px rgba(51, 68, 67, 0.7);
+  background-color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    left: auto;
+}
+.nav-item {
+    margin-left: 1.5rem;
+}
+.nav-link{
+    color: #334443;
+}
+.nav-link:hover{
+    color: #f48b29;
+}
+li .nav-link.active {
+    font-weight: 700;
+    border-bottom: 3px solid #f48b29;
+}
+.nav-logo {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f48b29;
+}
+.nav-logo:hover {
+    color: #334443;
+}
+
+/* project */
+
+
+/* footer */
+.footer {
+    background-color:#334443;
+    color: white;
+    text-align: center;
+    margin: 3em auto;
+}
+
+.footer > p {
+    padding: 1.3em;
+}
+
+/* media query goes below here */
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .content {
+        width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    /* .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        left: auto;
+    }
+    .nav-item {
+        margin-left: 1.5rem;
+    }
+    .nav-link{
+        color: #334443;
+    }
+    .nav-link:hover{
+        color: #f48b29;
+    }
+    li .nav-link.active {
+        font-weight: 700;
+        border-bottom: 3px solid #f48b29;
+    }
+    .nav-logo {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #f48b29;
+    } */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .content {
+        width: 65%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

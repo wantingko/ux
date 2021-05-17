@@ -1,0 +1,157 @@
+/* mobile first */
+.landing-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5% 0 5%;	
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .landing-text > h3 {
+    text-align: center;
+  }
+  .landing-text > p {
+    text-align: center;
+  }
+  .section-tag {
+    text-transform: uppercase;
+    color: #a7bbc7;
+  }
+  .content > img {
+    display: block;
+    margin: auto;
+  }
+
+  /* back to top */
+  #top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 65px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ffe227; /* Set a background color */
+    color: #334443; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+
+    font-size: 18px; /* Increase font size */
+    
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 35px;
+  }
+  
+  #top:hover {
+    color: white;
+    background-color: #f48b29; /* Add a dark-grey background on hover */
+  }
+
+  /* project color */
+  #mitigate {
+    background-color: rgba(43, 47, 51, .05);
+  }
+  #sheepy {
+    background-color: rgba(240, 201, 41, .25);
+  }
+  #collaboratory {
+    background-color: rgba(245,227,238, .7);
+  }
+  #ecoach {
+    background-color: rgba(159, 217, 218, 0.2);
+  }
+
+  /* project demo */
+  .demo {
+    gap: 1rem;
+    padding-bottom: 5em;
+    align-items: center;
+  }
+  .gif {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* research finding */
+  .proj-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .proj-card {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.125);
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 160px;
+    border-radius: .25rem;
+    padding: 1.25rem;
+  }
+
+  /* video */
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .video-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+/* media query goes below here */
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #top {
+    bottom: 35px;
+    right: 35px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .landing-grid {
+        flex-direction: row;
+        padding: 0 5%;
+      }
+      .landing-text {
+        position: relative;
+        padding: 20px 0;
+      }
+      .landing-text > h3 {
+        text-align: left;
+      }
+      .landing-text > p {
+        text-align: left;
+      }
+      .demo-reverse {
+          flex-direction: row-reverse;
+      }
+      .proj-container {
+        flex-wrap: nowrap;
+    }
+      .proj-card {
+        margin-right: 1rem;
+        }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
