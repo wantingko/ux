@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wan-Ting Ko | UX Designer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/html5reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/page.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/js/index.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html" class="nav-logo">Wan-Ting Ko</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" href="../assets/pdf/wantingko-resume-2021.pdf" class="nav-link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a> -->
+    <!-- btn-circle btn-xl -->
+    <!-- <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i> -->
+    <button onclick="topFunction()" id="top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <!-- project starts here -->
+    <div class="landing-grid" id="ecoach">
+        <div class="landing-text">
+            <h3>Improving user experience for a tailored communication system that creates personalized educational experiences</h3>
+            <!-- tags -->
+            <!-- <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-primary">Primary</span> -->
+        </div>
+        <div>
+            <img src="../assets/img/ec-landing-trans.png" style="width:100%">
+        </div>
+    </div>
+
+    <!-- 1. project overview -->
+    <div class="container content">
+        <h5 class="section-tag">Project overview</h5>
+        <h2>What is ECoach?</h2>
+        <p>ECoach is an educational message tailoring system that strives to create highly personalized learning experiences for students in large classes. According to Professor Tim McKay, the founder of ECoach, providing “the right information, at the right time, and in the right way to his students” is what he envisioned.</p>
+        <p>Since Summer 2020, I have been working on the project team as a User Experience Design Fellow. During the time, I worked on improving login experience and strengthening brand identity in the process.</p>
+        <br>
+        
+        <div class="row">
+            <div class="col-sm-4">
+            <h4>Role</h4>
+            <p>UX Design Fellow on the project from Aug 2020 - Jan 2021</p>
+            </div>
+            <div class="col-sm-4">
+            <h4>Team</h4>
+            <p>Project director, UX designer, behavioral scientists, content creator</p>
+            </div>
+            <div class="col-sm-4">
+            <h4>Type</h4>        
+            <p>Internship @ Center for Academic Innovation, UM</p>
+            </div>
+        </div>
+        <hr class="separator">
+    </div>
+
+    <!-- 2. solution -->
+    <div class="container content">
+        <h5 class="section-tag">Challenge</h5>
+        <h2>How might we strengthen brand identity through a tailored onboarding experience?</h2>
+        <p>In the previous login flow, all users go through similar login steps. They log in from the landing page, arrive at another landing page without sign in forms, read a welcome message, edit personal information, fill out a gating survey, and click through many more pages before getting to the one page that they are looking for.</p>
+        <img src="../assets/img/ec-challenge.png" class="img-fluid" alt="Design challenge" style="width:80%">
+        <br><br>
+        <p>The challenge brings me the opportunity to deep dive into how users interact with ECoach and explore ways to strengthen ECoach’s brand identity in the login/onboarding process.</p>
+        <img src="../assets/img/ec-goal.png" class="img-fluid" alt="Goal" style="width:40%">
+        <hr class="separator">
+    </div>
+
+    <!-- 3. design and development process -->
+    <div class="container content">
+        <h5 class="section-tag">Research and findings</h5>
+        <h2>ECoach has 5 main user groups, but each goes through almost the same onboarding path</h2>
+        <p>Using Django as the backend server, ECoach 5 user groups with different permission levels. Among them, 4 admin types of users interact mostly with the dashboard view and the remaining 1 only interacts with the student view.</p>
+        <img src="../assets/img/ec-user.png" class="img-fluid" alt="User types" style="width:80%">
+        <br><br><br>
+        <h2>It takes 6 to 10 steps for users to arrive at their destinations</h2>
+        <p>The number varies for different users and how they navigate the site for sure, but the process contains pages that are not necessary and messages that only make sense to 1 user group.</p>
+        <img src="../assets/img/ec-flow.png" class="img-fluid" alt="User flow" style="width:80%">
+        <br><br><br>
+        <h2>Brand identity is not stressed in the onboarding process for different users</h2>
+        <p>Dashboard view and student view use different color palettes, but that was not emphasized in admin login flow. Also, empty states do not follow an aligned style that strengthens brand identity.</p>
+        <img src="../assets/img/ec-flow-sc.png" class="img-fluid" alt="User flow w/ screenshots" style="width:80%">
+        <hr class="separator">
+    </div>
+
+    <!-- 4. design -->
+    <div class="container content">
+        <h5 class="section-tag">Design</h5>
+        <h2>Merged edit profile page and onboarding message page with tailored language and colors</h2>
+        <p>Since the onboarding message page does not provide additional information for next steps, I merged that with the profile edit page to simplify the number of clicks. Also, to make sure both verbal and visual messages are tailored to admin and student users, I redesigned the new edit profile page with careful language updates and styles carried from the dashboard and student views.</p>
+        <img src="../assets/img/ec-change-1.png" class="img-fluid" alt="Design change 1" style="width:80%">
+        <br><br><br>
+        
+        <h2>Shuffled interactions to fast forward users to their desired page and removed unnecessary pages accordingly</h2>
+        <p>Institution and coach level users visit the dashboard often. However, the previous flow brought them to student views first and eventually had them arrive at the dashboard view after 5-6 additional clicks. To reduce the number of clicks and steps, I moved dashboard views right after the new edit profile page so that institution and coach level users can perform tasks more efficiently. </p>
+        <img src="../assets/img/ec-change-2.png" class="img-fluid" alt="Design change 2">
+        <br><br><br>
+        <img src="../assets/img/ec-change-3.png" class="img-fluid" alt="Design change 3">
+        <br><br><br>
+
+        <h2>Redesigned empty states to strengthen brand identity</h2>
+        <p>On ECoach, most empty states are text-based but some come with illustrations. With the goal of strengthening brand identity and creating an enjoyable onboarding experience, I redesigned empty states by updating the visuals and verbal messages.</p>
+        <!-- before -->
+        <!-- <div class="row demo">
+            <div class="col-sm">
+                <img src="../assets/img/ec-empty-bf-1.png" class="img-fluid" alt="Before">
+            </div>
+            <div class="col-sm gif">
+                <img src="../assets/img/ec-empty-bf-2.png" class="img-fluid" alt="After">
+            </div>
+        </div> -->
+       <!-- after -->
+        <div class="row demo">
+            <div class="col-sm">
+                <img src="../assets/img/ec-empty-af-1.png" class="img-fluid" alt="After">
+            </div>
+            <div class="col-sm gif">
+                <p>Redesigned empty state of coaches</p>
+            </div>
+        </div>
+        
+        <div class="row demo demo-reverse">
+            <div class="col-sm">
+                <img src="../assets/img/ec-empty-af-2.png" class="img-fluid" alt="After">
+            </div>
+            <div class="col-sm gif">
+                <p>Responsive empty state of featured messages</p>
+            </div>
+        </div>
+
+        <div class="row demo">
+            <div class="col-sm">
+                <img src="../assets/img/ec-empty-af-3.png" class="img-fluid" alt="After">
+            </div>
+            <div class="col-sm gif">
+                <p>Responsive empty state of featured messages</p>
+            </div>
+        </div>
+        <hr class="separator">
+    </div>
+
+    <!-- 5. takeaways -->
+    <div class="container content">
+        <h5 class="section-tag">Takeaways</h5>
+        <h2>Onboarding details make a big difference</h2>
+        <p>Onboarding interaction and design might seem simple, but it is one of the best starting points to officially introduce the brand to users. Especially for large-scale projects with multiple groups of users, tailoring the onboarding experience to match different use cases and scenarios helps users more easily identify where they are at and what to expect.</p>
+        <br>
+
+        <h2>Empty states carry great potential for strengthening brand identity</h2>
+        <p>Empty state itself does not carry a ton of new information. However, having a consistent tone and design style across all empty states is important. From this design challenge, I’ve also worked with my mentor and learned how to turn static design mockups to responsive features through code.</p>
+        <hr class="separator">
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Designed and coded with ❤️‍ and ☕ by Wan-Ting Ko 2020</p>
+    </div>
+
+    <!-- script -->
+    <script>
+        // back to top
+        //Get the button
+        var mybutton = document.getElementById("top");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>

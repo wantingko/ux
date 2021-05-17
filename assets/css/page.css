@@ -16,6 +16,10 @@
     text-transform: uppercase;
     color: #a7bbc7;
   }
+  .content > img {
+    display: block;
+    margin: auto;
+  }
 
   /* back to top */
   #top {
@@ -52,6 +56,9 @@
   }
   #collaboratory {
     background-color: rgba(245,227,238, .7);
+  }
+  #ecoach {
+    background-color: rgba(159, 217, 218, 0.2);
   }
 
   /* project demo */
