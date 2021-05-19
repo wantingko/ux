@@ -19,92 +19,225 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/js/index.js"></script>
 </head>
 
 <body>
-  <!-- header -->
-  <header class="header">
-    <nav class="navbar">
-        <a href="#" class="nav-logo">Wan-Ting Ko</a>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="../index.html" class="nav-link active">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a href="../about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a target="_blank" href="../assets/pdf/wantingko-resume-2021.pdf" class="nav-link">Resume</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html" class="nav-logo">Wan-Ting Ko</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" href="../assets/pdf/wantingko-resume-2021.pdf" class="nav-link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a> -->
+    <!-- btn-circle btn-xl -->
+    <!-- <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i> -->
+    <button onclick="topFunction()" id="top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     <!-- project starts here -->
     <div class="landing-grid" id="mitigate">
         <div class="landing-text">
             <h3>Needs assessments and usability studies on a cyber security system</h3>
-            <p>*Sensitive information and details have been replaced with views with minimal details.</p>
+            <p>* Sensitive information and details have been replaced with views with minimal details.</p>
             <!-- tags -->
-            <span class="badge badge-primary">Primary</span>
-            <span class="badge badge-primary">Primary</span>
+            <!-- <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-primary">Primary</span> -->
         </div>
         <div>
-            <img src="../assets/img/mitigate-landing-trans.png" style="width:100%">
+            <img src="../assets/img/mg-landing-trans.png" style="width:100%">
         </div>
-    </div>
-    <!-- project overview -->
-    <div class="container content">
-    <div class="row">
-        <div class="col-sm-4">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-        <div class="col-sm-4">
-        <h3>Column 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-        <div class="col-sm-4">
-        <h3>Column 3</h3>        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
-    </div>
     </div>
 
+    <!-- 1. project overview -->
     <div class="container content">
+        <h5 class="section-tag">Project overview</h5>
+        <h2>MitiGate, a cyber security system created by UM</h2>
+        <p>MitiGate is a centralized portal for internet security data. It was created by the University of Michigan Information Assurance (IA) to provide Security Unit Liaisons with the ability to examine, address, and remediate their units’ security issues.</p>
+        <p>Even though MitiGate was designed specifically for SULs, the IA Information Systems Security Manager is concerned that it is not easy to understand for users with little to no background in IT security.</p>
+        <br>
+        
         <div class="row">
-            <div class="col">
-              1 of 2
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
+            <div class="col-sm-4">
+            <h4>Role</h4>
+            <p>UX researcher</p>
+            <p>Jan - April 2020</p>
             </div>
-            <div class="col">
-              2 of 2
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
+            <div class="col-sm-4">
+            <h4>Team</h4>
+            <p>Yun-Jen Cheng, Gina Herakovic, Gordon Nenadovic</p>
             </div>
+            <div class="col-sm-4">
+            <h4>Methods</h4>        
+            <p>Interview, comparative evaluation, survey, heuristic evaluation, usability test</p>
+            </div>
+        </div>
+        <hr class="separator">
+    </div>
+
+    <!-- 2. process -->
+    <div class="container content">
+        <h5 class="section-tag">Process</h5>
+        <h2>Mixed-method research project</h2>
+        <p>We started with creating interaction maps to picture how users interact with the portal. We then moved on to assess user needs by conducting interviews with Security Unit Liaisons, designed and analyzed surveys, did comparative analysis on industry cyber security products, and created personas to illustrate our findings.</p>
+        <p>After that, we proceed to evaluate usability through heuristic evaluation and usability tests.</p>
+        <img src="../assets/img/mg-process.png" class="img-fluid" alt="process">
+
+        <hr class="separator">
+    </div>
+
+    <!-- 3. interaction map -->
+    <div class="container content">
+        <h5 class="section-tag">Interaction map</h5>
+        <h2>Understand the current product and how it works</h2>
+        <p>To gain a high-level understanding of the current features, interactions, and user flows, we poked through the site and created interaction sitemaps accordingly. </p>
+        <p>Since the working site includes sensitive security data, I am not able to show the real product here. I instead recreated the views with minimal details shown below.</p>
+        <img src="../assets/img/mg-map.png" class="img-fluid" alt="interaction sitemap">
+        
+        <hr class="separator">
+    </div>
+
+    <!-- 4. user interviews and personas -->
+    <div class="container content">
+        <h5 class="section-tag">User interviews and personas</h5>
+        <h2>Security Unit Liaisons and their stories</h2>
+        <p>We conducted 5 user interviews to understand how intuitive MitiGate is and locate problems that Security Unit Liaisons (SULs) with levels of expertise in IT security are facing.</p>
+        <p>Among the 5 interviewees, 1 is our stakeholder, the IA Information Systems Security Manager, and the rest are SULs working for different departments on the campus.</p>
+        <img src="../assets/img/mg-user-1.png" class="img-fluid" alt="persona 1" style="width: 75%;">
+        <br>
+        <img src="../assets/img/mg-user-2.png" class="img-fluid" alt="persona 2" style="width: 75%;">
+        <br>
+        <img src="../assets/img/mg-user-3.png" class="img-fluid" alt="persona 3" style="width: 75%;">
+        <hr class="separator">
+    </div>
+
+    <!-- 5. comparative evaluation -->
+    <div class="container content">
+        <h5 class="section-tag">Comparative evaluation</h5>
+        <h2>Strengths and weaknesses of competitors on the market</h2>
+        <p>Though MitiGate is an internal tool developed to help streamline the process of solving security issues within an academic institution, we believe looking into industry products to see other solutions are handling challenges in similar problem space is worthwhile. </p>
+        <p>We identified 1 indirect competitor and 8 parallel competitors to help us better understand the landscape.</p>
+        <img src="../assets/img/mg-comparative.png" class="img-fluid" alt="comparative evaluation" style="width: 100%;">
+       
+        <hr class="separator">
+    </div>
+
+    <!-- 6. surveys -->
+    <div class="container content">
+        <h5 class="section-tag">Surveys</h5>
+        <h2>Reached out to more than 90% of end users</h2>
+        <p>We developed a survey to reach out to more SULs and collect broader feedback on their experience with the system. Due to Covid, we only received one response on the pilot test, but fortunately we were able to collect 25 responses from SULs with our official survey that was open for a week.</p>
+        <div class="proj-container">
+            <div class="proj-card">
+              <h4>15</h4>
+              <p>Survey questions</p>
+            </div>
+            <div class="proj-card">
+              <h4>2</h4>
+              <p>Pilot studies</p>
+            </div>
+            <div class="proj-card">
+              <h4>25</h4>
+              <p>SUL responses</p>
+            </div>
+        </div>
+        <hr class="separator">
+    </div>
+
+    <!-- 7. heuristic evaluation -->
+    <div class="container content">
+        <h5 class="section-tag">Heuristic evaluation</h5>
+        <h2>Identified usability issues with Nielsen’s 10 Usability Heuristics</h2>
+        <p>We used Nielsen’s 10 Usability Heuristics for User Interface Design and Ratings for Usability Problems as a broad umbrella to examine the dashboard interface and define the seriousness of each issue found.</p>
+        <p>We first evaluated MitiGate independently and came back as a group to parse through the data in search of common patterns and themes.</p>
+        <div class="proj-container">
+          <div class="proj-card">
+            <h4>3</h4>
+            <h5>Security Unit Liaisons participants</h5>
+            <p>Multiple levels of IT security background</p>
           </div>
-      </div>
-      
+          <div class="proj-card">
+            <h4>2</h4>
+            <h5>University graduate students</h5>
+            <p>Novice in IT security and the system</p>
+          </div>
+        </div>
+        <hr class="separator">
+    </div>
+
+    <!-- 7. findings and recommendations -->
+    <div class="container content">
+        <h5 class="section-tag">Findings and recommendations</h5>
+        <h2>Located usability issues to mitigate</h2>
+        <h4>Re-evaluate the aesthetic of MitiGate with a higher focus on responsive design and accessibility</h4>
+        <p>While MitiGate is visually appealing in desktop view, we found that the mobile view was not up to date. The icon, hamburger menus, and some other UI elements are not aligned with the most updated version we see in full screens.</p>
+        <p>Based on the finding, we suggest working on responsive design and make sure information users see from different devices is consistent and up-to-date.</p>
+        <img src="../assets/img/mg-recommend-1.png" class="img-fluid" alt="recommendation 1" style="width: 100%;">
+        <br><br>
+        <p>Also, from initial exploration, interviews and heuristic evaluations, we discovered that colors of text do not have enough contrast with the background. This increased extra barriers for users to perceive and take actions from the information provided.</p>
+        <p>To solve the issue, we recommend trying out free accessibility checkers such as WAVE, aXe, and the W3C Markup Validator.</p>
+        <img src="../assets/img/mg-recommend-2.png" class="img-fluid" alt="recommendation 2" style="width: 100%;">
+        <br><br><br>
+        <h4>Improve Documentation and Support</h4>
+        <p>Information gathered from interviews and surveys revealed that Security Unit Liaisons (SULs) are not all experienced with IT security. MitiGate had done a good job in data visualization, and that made handling security issues in each department less intimidating. However, users expressed that there could be more documentation as well as other forms of support such as a searchable glossary of jargon and basic contact information or FAQs.</p>
+        <p>Through usability tests, we observed that currently, users go from MitiGate to several other external pages to collect pieces of information to handle security issues. Consolidating detailed reports to the system might not be an easy fix compared to other usability issues. This can be a long-term goal that needs further planning.</p>
+        <img src="../assets/img/mg-recommend-3.png" class="img-fluid" alt="recommendation 3" style="width: 100%;">
+        <br><br><br>
+        <h4>Enable customization</h4>
+        <p>From the comparative evaluation we conducted, we discovered that traditionally cyber security management platforms serve as a one-stop dashboard where users browse through the data and take actions accordingly.</p>
+        <p>However, during interviews, users have mentioned that they would love to have a more customized experience. For example, allowing them to update their progress on the dashboard and hide certain parts of information that they do not interact with at all.</p>
+        <img src="../assets/img/mg-recommend-4.png" class="img-fluid" alt="recommendation 4" style="width: 100%;">
+        <hr class="separator">
+    </div>
+
+    <!-- 8. reflection -->
+    <div class="container content">
+      <h5 class="section-tag">Limitation and next steps</h5>
+      <h2>Limitations</h2>
+      <p>Though our team has extensive experience with technology, none of us have been exposed to IT security work. We evaluated the system based on usability guidelines we consulted and did our best in designing tasks and analysing user pain points through interviews, surveys, and usability tests. However, since we are novice in this field, it is very likely that somehow we were influenced by amateur perspectives.</p>
+      <p>Also, due to the outbreak of Covid, we conducted usability tests in remote environments where there were additional barriers observing users perform tasks and express emotions through facial expressions.</p>
+      <br>
+      <h2>Next steps</h4>
+      <p>For next steps, we envision that Information Assurance at the University of Michigan ITS can benefit from our research by prioritizing the findings and recommendations based on level of urgency, ease of development, and cost of implementation.</p>
+      <hr class="separator">
+  </div>
+
     <!-- footer -->
     <div class="footer">
-        <p>Designed and coded by Wan-Ting Ko 2020 with ❤️‍ and ☕</p>
+        <p>Designed and coded with ❤️‍ and ☕ by Wan-Ting Ko 2020</p>
     </div>
+
+    <!-- script -->
+    <script>
+        // back to top
+        //Get the button
+        var mybutton = document.getElementById("top");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 </html>
