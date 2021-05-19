@@ -66,8 +66,15 @@
     background-color: rgba(245,227,238, .7);
   }
   #ecoach {
-    background-color: rgba(159, 217, 218, 0.2);
+    background-color: rgba(159, 217, 218, .2);
   }
+  #spire {
+    background-color: rgba(231, 245, 253, .5);
+  }
+  #change {
+    background-color: rgba(38, 51, 109, .06);
+  }
+  
 
   /* project demo */
   .demo {
