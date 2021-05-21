@@ -61,7 +61,13 @@ li .nav-link.active {
 }
 
 /* project */
+.proj-tag {
+    color: #a7bbc7;
+  }
 
+.poem {
+    text-align: center;
+}
 
 /* footer */
 .footer {
