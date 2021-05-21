@@ -65,6 +65,10 @@ li .nav-link.active {
     color: #a7bbc7;
   }
 
+.poem {
+    text-align: center;
+}
+
 /* footer */
 .footer {
     background-color:#334443;

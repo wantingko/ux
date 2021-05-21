@@ -4,37 +4,155 @@
   <title>Wan-Ting Ko | UX Designer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/html5reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/page.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/index.js"></script>
 </head>
+
 <body>
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Wan-Ting Ko</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" href="assets/pdf/wantingko-resume-2021.pdf" class="nav-link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a> -->
+    <!-- btn-circle btn-xl -->
+    <!-- <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i> -->
+    <button onclick="topFunction()" id="top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
-<div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <!-- 1. intro -->
+    <div class="container content">
+      <div class="row demo about-2-col">
+        <div class="col-sm">
+            <h4>Hi, I'm Wan-Ting!</h4>
+            <h5>Currently a UX Design Fellow working on enterprise ed-tech products</h5>
+            <p>I am a UX + Product Designer who has a keen interest listening to users’ stories and turning the insights into intuitive interactions.</p>
+            <p>I deep dive into complicated systems and come up with simple solutions that connect users with the product.</p>
+            <p>Feel free to reach me through <a href="http://www.linkedin.com/in/wan-ting-ko-6a6617196">Linkedin</a> / <a href="mailto:wtko@umich.edu">Email</a> :)</p>
+        </div>
+        <div class="col-sm gif">
+            <img src="assets/img/about-5.jpg" style="max-width: 300px">
+        </div>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <hr class="separator">
     </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-  </div>
-</div>
 
+    <!-- 2. journey -->
+    <div class="container content">
+      <h5 class="section-tag">Journey</h5>
+      <h2>Literatures, languages, and learning</h2>
+      <p>I have always wanted to become a high school teacher. In the last year of my college days, when I was not sitting in classrooms studying Literatures and imagining what Shakespeare and Milton would say if they were also in the lectures, I was probably on my way to attend classroom observations in local high schools.</p>
+      <img src="assets/img/about-2.jpg" class="img-fluid" alt="" style="width: 70%;">
+      <br><br>
+      <h2>In love with designing learning experiences</h2>
+      <p>After college, I was fortunate enough to achieve my childhood dream. I love designing learning experiences to empower learners and enjoy crafting pixel perfect slides and worksheets. The days were a mixture of sweet and sour moments. I like what I am doing, but I hope I can make a greater impact. It was painful to accept the truth that it’s impossible to fully support each and every learner.</p>
+      <img src="assets/img/about-3.jpg" class="img-fluid" alt="" style="width: 70%;">
+      <br><br>
+      <h2>From education to Product Design</h2>
+      <p>After work, I biked to nearby universities to audit evening courses. I started with a Project Oriented Programming course and a Human-Computer Interaction course. The experience unfolded a new ground where people, design, and development are tightly connected to solve complicated problems in the world. The more I explore, the more I am fascinated by the approach.</p>
+      <img src="assets/img/about-4.jpg" class="img-fluid" alt="" style="width: 70%;">
+
+      <hr class="separator">
+    </div>
+
+    <!-- outside of work 2 col -->
+    <div class="container content">
+      <h5 class="section-tag">Outside of work</h5>
+      <h2>When I'm not with my computer</h2>
+      <div class="row demo">
+        <div class="col-sm">
+          <p>In spring</p>
+          <p>I watch goslings and ducklings waddling with their family</p>
+          <p>I chuckle when they are lost in other babysitting groups accidentally</p>
+          <p>In summer</p>
+          <p>I imagine soaking myself in cool water with Capybara</p>
+          <p>I wake up from dream when I hear greetings from Kookaburra</p>
+          <p>In autumn</p>
+          <p>I spy on chipmunks hiding acorns in the ground</p>
+          <p>I grin cheerfully when they suddenly turn around</p>
+          <p>In winter</p>
+          <p>I investigate mysterious footprints left one the snow</p>
+          <p>I scream with joy when I see the secret visitor show</p>
+        </div>
+        <div class="col-sm gif">
+            <img src="assets/img/about-6.jpg" style="width: 100%;">
+        </div>
+    </div>
+    </div>
+
+    <!-- outside of work 1 col -->
+    <!-- <div class="container content poem">
+      <h5 class="section-tag">Outside of work</h5>
+      <h2>When I'm not with my computer</h2>
+      <p>In spring</p>
+      <p>I watch goslings and ducklings waddling with their family</p>
+      <p>I chuckle when they are lost in other babysitting groups accidentally</p>
+      <p>In summer</p>
+      <p>I imagine soaking myself in cool water with Capybara</p>
+      <p>I wake up from dream when I hear greetings from Kookaburra</p>
+      <p>In autumn</p>
+      <p>I spy on chipmunks hiding acorns in the ground</p>
+      <p>I grin cheerfully when they suddenly turn around</p>
+      <p>In winter</p>
+      <p>I investigate mysterious footprints left one the snow</p>
+      <p>I scream with joy when I see the secret visitor show</p>
+      <img src="assets/img/about-6.jpg" class="img-fluid" alt="" style="width: 70%;">
+      <br>
+
+    </div> -->
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Designed and coded with ❤️‍ and ☕ by Wan-Ting Ko 2020</p>
+    </div>
+
+    <!-- script -->
+    <script>
+        // back to top
+        //Get the button
+        var mybutton = document.getElementById("top");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 </html>
