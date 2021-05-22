@@ -40,17 +40,13 @@
             </ul>
         </nav>
     </header>
-    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a> -->
-    <!-- btn-circle btn-xl -->
-    <!-- <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i> -->
+    <!-- back to top -->
     <button onclick="topFunction()" id="top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    
     <!-- project starts here -->
     <div class="landing-grid" id="ecoach">
         <div class="landing-text">
             <h3>Improving user experience for a tailored communication system that creates personalized educational experiences</h3>
-            <!-- tags -->
-            <!-- <span class="badge badge-primary">Primary</span>
-            <span class="badge badge-primary">Primary</span> -->
         </div>
         <div>
             <img src="../assets/img/ec-landing-trans.png" style="width:100%">
@@ -88,9 +84,11 @@
         <h2>How might we strengthen brand identity through a tailored onboarding experience?</h2>
         <p>In the previous login flow, all users go through similar login steps. They log in from the landing page, arrive at another landing page without sign in forms, read a welcome message, edit personal information, fill out a gating survey, and click through many more pages before getting to the one page that they are looking for.</p>
         <img src="../assets/img/ec-challenge.png" class="img-fluid" alt="Design challenge" style="width:80%">
+        <p class="caption">Onboarding route looks the same for all users, only that they get off at different stops</p>
         <br><br>
         <p>The challenge brings me the opportunity to deep dive into how users interact with ECoach and explore ways to strengthen ECoach’s brand identity in the login/onboarding process.</p>
         <img src="../assets/img/ec-goal.png" class="img-fluid" alt="Goal" style="width:40%">
+        <p class="caption">Design goal is to tailor onboarding process to cater with different users’ needs</p>
         <hr class="separator">
     </div>
 
@@ -100,14 +98,17 @@
         <h2>ECoach has 5 main user groups, but each goes through almost the same onboarding path</h2>
         <p>Using Django as the backend server, ECoach 5 user groups with different permission levels. Among them, 4 admin types of users interact mostly with the dashboard view and the remaining 1 only interacts with the student view.</p>
         <img src="../assets/img/ec-user.png" class="img-fluid" alt="User types" style="width:80%">
+        <p class="caption">5 groups of users with different permission levels</p>
         <br><br><br>
         <h2>It takes 6 to 10 steps for users to arrive at their destinations</h2>
         <p>The number varies for different users and how they navigate the site for sure, but the process contains pages that are not necessary and messages that only make sense to 1 user group.</p>
         <img src="../assets/img/ec-flow.png" class="img-fluid" alt="User flow" style="width:80%">
+        <p class="caption">Superuser onboarding flow at a glance</p>
         <br><br><br>
         <h2>Brand identity is not stressed in the onboarding process for different users</h2>
         <p>Dashboard view and student view use different color palettes, but that was not emphasized in admin login flow. Also, empty states do not follow an aligned style that strengthens brand identity.</p>
         <img src="../assets/img/ec-flow-sc.png" class="img-fluid" alt="User flow w/ screenshots" style="width:80%">
+        <p class="caption">Admin users go through student view styled pages in the onboarding process</p>
         <hr class="separator">
     </div>
 
@@ -117,6 +118,7 @@
         <h2>Merged edit profile page and onboarding message page with tailored language and colors</h2>
         <p>Since the onboarding message page does not provide additional information for next steps, I merged that with the profile edit page to simplify the number of clicks. Also, to make sure both verbal and visual messages are tailored to admin and student users, I redesigned the new edit profile page with careful language updates and styles carried from the dashboard and student views.</p>
         <img src="../assets/img/ec-change-1.png" class="img-fluid" alt="Design change 1" style="width:80%">
+        <p class="caption">Views merged and redesigned to meet user expectations</p>
         <br><br><br>
         
         <h2>Shuffled interactions to fast forward users to their desired page and removed unnecessary pages accordingly</h2>
@@ -124,6 +126,7 @@
         <img src="../assets/img/ec-change-2.png" class="img-fluid" alt="Design change 2">
         <br><br><br>
         <img src="../assets/img/ec-change-3.png" class="img-fluid" alt="Design change 3">
+        <p class="caption">Pages that no longer carry necessary content were removed</p>
         <br><br><br>
 
         <h2>Redesigned empty states to strengthen brand identity</h2>

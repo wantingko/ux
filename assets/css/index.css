@@ -4,15 +4,18 @@ html, body{
     height: 100%;
     position: relative;
     font-family: 'Karla', sans-serif;
+    color: #334443;
     /* font-family: 'Rubik', sans-serif; */
 }
+/* .grey {
+    background-color: rgba(51, 68, 67, .04);
+} */
 a:hover {
     text-decoration: none;
 }
 .content {
     width: 80%;
 }
-
 .separator {
     margin: 5em auto;
 }
@@ -42,11 +45,13 @@ a:hover {
 }
 .nav-link{
     color: #334443;
+    /* color: white; */
 }
 .nav-link:hover{
     color: #f48b29;
 }
 li .nav-link.active {
+    color: #f48b29;
     font-weight: 700;
     border-bottom: 3px solid #f48b29;
 }
@@ -58,6 +63,12 @@ li .nav-link.active {
 }
 .nav-logo:hover {
     color: #334443;
+    /* color: #ffe227; */
+}
+#dark-bg {
+    background-color: #334443;
+    color: white;
+    border-radius: 0;
 }
 
 /* project */

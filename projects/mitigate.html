@@ -40,18 +40,14 @@
             </ul>
         </nav>
     </header>
-    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a> -->
-    <!-- btn-circle btn-xl -->
-    <!-- <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i> -->
+    <!-- back to top -->
     <button onclick="topFunction()" id="top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    
     <!-- project starts here -->
     <div class="landing-grid" id="mitigate">
         <div class="landing-text">
             <h3>Needs assessments and usability studies on a cyber security system</h3>
             <p>* Sensitive information and details have been replaced with views with minimal details.</p>
-            <!-- tags -->
-            <!-- <span class="badge badge-primary">Primary</span>
-            <span class="badge badge-primary">Primary</span> -->
         </div>
         <div>
             <img src="../assets/img/mg-landing-trans.png" style="width:100%">
@@ -69,8 +65,8 @@
         <div class="row">
             <div class="col-sm-4">
             <h4>Role</h4>
-            <p>UX researcher</p>
-            <p>Jan - April 2020</p>
+            <p>UX researcher from Jan - April 2020</p>
+            <!-- <p>Jan - April 2020</p> -->
             </div>
             <div class="col-sm-4">
             <h4>Team</h4>
@@ -91,6 +87,7 @@
         <p>We started with creating interaction maps to picture how users interact with the portal. We then moved on to assess user needs by conducting interviews with Security Unit Liaisons, designed and analyzed surveys, did comparative analysis on industry cyber security products, and created personas to illustrate our findings.</p>
         <p>After that, we proceed to evaluate usability through heuristic evaluation and usability tests.</p>
         <img src="../assets/img/mg-process.png" class="img-fluid" alt="process">
+        <p class="caption">Mixed-method research process</p>
 
         <hr class="separator">
     </div>
@@ -102,6 +99,7 @@
         <p>To gain a high-level understanding of the current features, interactions, and user flows, we poked through the site and created interaction sitemaps accordingly. </p>
         <p>Since the working site includes sensitive security data, I am not able to show the real product here. I instead recreated the views with minimal details shown below.</p>
         <img src="../assets/img/mg-map.png" class="img-fluid" alt="interaction sitemap">
+        <p class="caption">Exploring interactions and possible usability issues</p>
         
         <hr class="separator">
     </div>
@@ -113,10 +111,13 @@
         <p>We conducted 5 user interviews to understand how intuitive MitiGate is and locate problems that Security Unit Liaisons (SULs) with levels of expertise in IT security are facing.</p>
         <p>Among the 5 interviewees, 1 is our stakeholder, the IA Information Systems Security Manager, and the rest are SULs working for different departments on the campus.</p>
         <img src="../assets/img/mg-user-1.png" class="img-fluid" alt="persona 1" style="width: 75%;">
+        <p class="caption">Persona of a "Non-user"</p>
         <br>
         <img src="../assets/img/mg-user-2.png" class="img-fluid" alt="persona 2" style="width: 75%;">
+        <p class="caption">Persona of a "Light-user"</p>
         <br>
         <img src="../assets/img/mg-user-3.png" class="img-fluid" alt="persona 3" style="width: 75%;">
+        <p class="caption">Persona of a "Middle-light-user"</p>
         <hr class="separator">
     </div>
 
@@ -127,7 +128,7 @@
         <p>Though MitiGate is an internal tool developed to help streamline the process of solving security issues within an academic institution, we believe looking into industry products to see other solutions are handling challenges in similar problem space is worthwhile. </p>
         <p>We identified 1 indirect competitor and 8 parallel competitors to help us better understand the landscape.</p>
         <img src="../assets/img/mg-comparative.png" class="img-fluid" alt="comparative evaluation" style="width: 100%;">
-       
+        <p class="caption">Comparative analysis on other cyber security products</p>
         <hr class="separator">
     </div>
 
@@ -158,6 +159,9 @@
         <h5 class="section-tag">Heuristic evaluation</h5>
         <h2>Identified usability issues with Nielsen’s 10 Usability Heuristics</h2>
         <p>We used Nielsen’s 10 Usability Heuristics for User Interface Design and Ratings for Usability Problems as a broad umbrella to examine the dashboard interface and define the seriousness of each issue found.</p>
+        <img src="../assets/img/mg-heuristics.png" class="img-fluid" alt="heuristics">
+        <p class="caption">Nielsen’s 10 Usability Heuristics for User Interface Design </p>
+        <br>
         <p>We first evaluated MitiGate independently and came back as a group to parse through the data in search of common patterns and themes.</p>
         <div class="proj-container">
           <div class="proj-card">
@@ -182,26 +186,30 @@
         <p>While MitiGate is visually appealing in desktop view, we found that the mobile view was not up to date. The icon, hamburger menus, and some other UI elements are not aligned with the most updated version we see in full screens.</p>
         <p>Based on the finding, we suggest working on responsive design and make sure information users see from different devices is consistent and up-to-date.</p>
         <img src="../assets/img/mg-recommend-1.png" class="img-fluid" alt="recommendation 1" style="width: 100%;">
+        <p class="caption">Ensure the elements on the mobile view and web view are consistent</p>
         <br><br>
         <p>Also, from initial exploration, interviews and heuristic evaluations, we discovered that colors of text do not have enough contrast with the background. This increased extra barriers for users to perceive and take actions from the information provided.</p>
         <p>To solve the issue, we recommend trying out free accessibility checkers such as WAVE, aXe, and the W3C Markup Validator.</p>
         <img src="../assets/img/mg-recommend-2.png" class="img-fluid" alt="recommendation 2" style="width: 100%;">
+        <p class="caption">Evaluate MitiGate for accessibility using WAVE, aXe, and the W3C Markup Validator</p>
         <br><br><br>
         <h4>Improve Documentation and Support</h4>
         <p>Information gathered from interviews and surveys revealed that Security Unit Liaisons (SULs) are not all experienced with IT security. MitiGate had done a good job in data visualization, and that made handling security issues in each department less intimidating. However, users expressed that there could be more documentation as well as other forms of support such as a searchable glossary of jargon and basic contact information or FAQs.</p>
         <p>Through usability tests, we observed that currently, users go from MitiGate to several other external pages to collect pieces of information to handle security issues. Consolidating detailed reports to the system might not be an easy fix compared to other usability issues. This can be a long-term goal that needs further planning.</p>
         <img src="../assets/img/mg-recommend-3.png" class="img-fluid" alt="recommendation 3" style="width: 100%;">
+        <p class="caption">Users' needs on documentation and support</p>
         <br><br><br>
         <h4>Enable customization</h4>
         <p>From the comparative evaluation we conducted, we discovered that traditionally cyber security management platforms serve as a one-stop dashboard where users browse through the data and take actions accordingly.</p>
         <p>However, during interviews, users have mentioned that they would love to have a more customized experience. For example, allowing them to update their progress on the dashboard and hide certain parts of information that they do not interact with at all.</p>
         <img src="../assets/img/mg-recommend-4.png" class="img-fluid" alt="recommendation 4" style="width: 100%;">
+        <p class="caption">Enable users to update their progress and decide what sections to show on the dashboard</p>
         <hr class="separator">
     </div>
 
     <!-- 8. reflection -->
     <div class="container content">
-      <h5 class="section-tag">Limitation and next steps</h5>
+      <h5 class="section-tag">Reflection</h5>
       <h2>Limitations</h2>
       <p>Though our team has extensive experience with technology, none of us have been exposed to IT security work. We evaluated the system based on usability guidelines we consulted and did our best in designing tasks and analysing user pain points through interviews, surveys, and usability tests. However, since we are novice in this field, it is very likely that somehow we were influenced by amateur perspectives.</p>
       <p>Also, due to the outbreak of Covid, we conducted usability tests in remote environments where there were additional barriers observing users perform tasks and express emotions through facial expressions.</p>
