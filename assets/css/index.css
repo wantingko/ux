@@ -85,11 +85,12 @@ li .nav-link.active {
     background-color:#334443;
     color: white;
     text-align: center;
-    margin: 3em auto;
+    /* margin: 3em auto; */
 }
 
 .footer > p {
     padding: 1.3em;
+    margin-bottom: 0;
 }
 
 /* media query goes below here */

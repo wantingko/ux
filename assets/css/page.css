@@ -88,6 +88,13 @@
     justify-content: center;
   }
 
+  .gif > img {
+    max-height: 495px;
+  }
+  .gif > video {
+    max-height: 200px;
+  }
+
   /* research finding */
   .proj-container {
     position: relative;
