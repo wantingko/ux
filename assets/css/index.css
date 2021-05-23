@@ -56,7 +56,8 @@ li .nav-link.active {
     border-bottom: 3px solid #f48b29;
 }
 .nav-logo {
-    display: block;
+    display: none;
+    /* display: block; */
     font-size: 1.5rem;
     font-weight: 700;
     color: #f48b29;
@@ -103,13 +104,22 @@ li .nav-link.active {
     .content {
         width: 60%;
     }
+    .navbar {
+        justify-content: space-between;
+    }
+    .nav-logo {
+        display: block;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .navbar {
+    /* .navbar {
         justify-content: space-between;
-    }
+    } */
+    /* .nav-logo {
+        display: block;
+    } */
     /* .navbar {
         display: flex;
         justify-content: space-between;
