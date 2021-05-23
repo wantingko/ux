@@ -88,6 +88,13 @@
     justify-content: center;
   }
 
+  .gif > img {
+    max-height: 495px;
+  }
+  .gif > video {
+    max-height: 200px;
+  }
+
   /* research finding */
   .proj-container {
     position: relative;
@@ -146,8 +153,13 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .landing-grid {
-        flex-direction: row;
-        padding: 0 5%;
+        /* flex-direction: row;
+        padding: 0 5%; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 0 5%;	
+        margin-bottom: 50px;
       }
       .landing-text {
         position: relative;
