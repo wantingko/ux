@@ -5,6 +5,7 @@ html, body{
     position: relative;
     font-family: 'Karla', sans-serif;
     color: #334443;
+    /* background-color: #f6f8fa; */
     background-color: #fdfdfd;
     /* font-family: 'Rubik', sans-serif; */
 }
@@ -70,6 +71,11 @@ li .nav-link.active {
 #dark-bg {
     background-color: #334443;
     color: white;
+    border-radius: 0;
+}
+#light-bg {
+    background-color: #f9f8fd;
+    color: #334443;
     border-radius: 0;
 }
 
