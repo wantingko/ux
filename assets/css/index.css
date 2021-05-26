@@ -5,6 +5,8 @@ html, body{
     position: relative;
     font-family: 'Karla', sans-serif;
     color: #334443;
+    /* background-color: #f6f8fa; */
+    background-color: #fdfdfd;
     /* font-family: 'Rubik', sans-serif; */
 }
 /* .grey {
@@ -18,6 +20,12 @@ a:hover {
 }
 .separator {
     margin: 5em auto;
+}
+.hero-text {
+    font-family: 'KoHo', sans-serif;
+}
+#apostrophe {
+    color: #ffe227;
 }
 
 /* header and navbar */
@@ -56,7 +64,8 @@ li .nav-link.active {
     border-bottom: 3px solid #f48b29;
 }
 .nav-logo {
-    display: block;
+    display: none;
+    /* display: block; */
     font-size: 1.5rem;
     font-weight: 700;
     color: #f48b29;
@@ -68,6 +77,11 @@ li .nav-link.active {
 #dark-bg {
     background-color: #334443;
     color: white;
+    border-radius: 0;
+}
+#light-bg {
+    background-color: #f9f8fd;
+    color: #334443;
     border-radius: 0;
 }
 
@@ -103,13 +117,22 @@ li .nav-link.active {
     .content {
         width: 60%;
     }
+    .navbar {
+        justify-content: space-between;
+    }
+    .nav-logo {
+        display: block;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .navbar {
+    /* .navbar {
         justify-content: space-between;
-    }
+    } */
+    /* .nav-logo {
+        display: block;
+    } */
     /* .navbar {
         display: flex;
         justify-content: space-between;
