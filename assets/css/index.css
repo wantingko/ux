@@ -21,6 +21,17 @@ a:hover {
 .separator {
     margin: 5em auto;
 }
+.hero-text {
+    font-size: 3rem;
+    font-family: 'KoHo', sans-serif;
+}
+.hero-des {
+    /* color: #eaf5ff; */
+    color: #bbbfca;
+}
+#apostrophe {
+    color: #ffe227;
+}
 
 /* header and navbar */
 .header{
