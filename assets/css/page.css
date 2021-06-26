@@ -140,8 +140,7 @@
 
   /* about */
   .about-2-col {
-    padding-top: 5em;
-    padding-bottom: 0;
+    padding: 6em 0;
   }
 
 /* media query goes below here */
